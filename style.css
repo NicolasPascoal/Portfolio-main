@@ -1,0 +1,358 @@
+/* ===== BASE ===== */
+*{
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+    font-family: 'Poppins', sans-serif;
+}
+
+html {
+    scroll-behavior: smooth;
+}
+
+body{
+    background-color: #0d1117;
+    color: #fff;
+    line-height: 1.6;
+}
+
+/* ===== INTERFACE ===== */
+.interface{
+    max-width: 1280px;
+    margin: 0 auto;
+}
+
+/* ===== FLEX ===== */
+.flex{
+    display: flex;
+    flex-wrap: wrap;
+}
+
+/* ===== BOTÕES ===== */
+button, .btn-contato button{
+    background: linear-gradient(135deg, #58a6ff, #7e5fff);
+    color: #fff;
+    padding: 12px 40px;
+    border-radius: 30px;
+    border: none;
+    font-weight: 600;
+    cursor: pointer;
+    transition: all 0.3s;
+    box-shadow: 0 0 15px rgba(88,166,255,0.5);
+}
+button:hover, .btn-contato button:hover{
+    transform: scale(1.1);
+    box-shadow: 0 0 30px rgba(126,95,255,0.7);
+}
+
+/* ===== TÍTULOS ===== */
+h2.titulo{
+    color: #fff;
+    font-size: 38px;
+    text-align: center;
+    margin-bottom: 40px;
+}
+h2.titulo span{
+    color: #7e5fff;
+}
+
+/* ===== HEADER ===== */
+header{
+   padding: 30px 4%;
+    background:black;
+    box-shadow: 0 5px 15px rgba(0,0,0,0.5);
+    position: fixed;
+    top: 0;
+    left: 0;
+    width: 100%;
+    z-index: 100;
+    transition: top 0.3s ease-in-out;
+}
+header > .interface{
+    display: flex;
+    align-items: center;
+    justify-content: space-between;
+}
+.logo img{
+    height: 70px;
+    width: auto;
+    transition: transform 0.3s;
+}
+.logo img:hover{
+    transform: scale(1.05);
+}
+header a{
+    color: #b0b0b0;
+    text-decoration: none;
+    transition: .3s;
+}
+header a:hover{
+    color: #58a6ff;
+    transform: scale(1.05);
+}
+header nav ul{
+    list-style: none;
+}
+header nav ul li{
+    display: inline-block;
+    padding: 0 30px;
+}
+
+/* ===== HERO / topoDoSite ===== */
+section.topoDoSite{
+    padding: 100px 0;
+    background: linear-gradient(135deg, #1f1f2a, #0d1117, #2a2a3f);
+    border-radius: 20px;
+}
+section.topoDoSite .txtTopoSite,
+section.topoDoSite .imgTopoSite {
+    flex: 1 1 400px; 
+}
+section.topoDoSite .flex{
+    display: flex;
+    align-items: center;
+    gap: 60px;
+    flex-wrap: wrap; /* mantém responsivo */
+    justify-content: space-between; 
+}
+.txtTopoSite h1{
+    font-size: 48px;
+    line-height: 1.2;
+    background: linear-gradient(90deg, #58a6ff, #7e5fff);
+    -webkit-background-clip: text;
+    -webkit-text-fill-color: transparent;
+    margin-bottom: 20px;
+}
+.txtTopoSite p{
+    margin: 25px 0;
+    color: #c0c0c0;
+    font-size: 18px;
+}
+.imgTopoSite img{
+    width: 350px;
+    border-radius: 20px;
+    box-shadow: 0 0 30px rgba(88,166,255,0.5);
+    animation: flutuar 3s ease-in-out infinite alternate;
+    display: block;
+    margin: 0 auto;
+}
+
+/* ===== ESPECIALIDADES ===== */
+section.especialidades{
+    padding: 60px 4%;
+}
+.especialidades .flex{
+    gap: 40px;
+    justify-content: space-around;
+    flex-wrap: wrap;
+}
+.especialidades .especialidades-box {
+    background: linear-gradient(145deg, #1a1a2a, #1f1f3a);
+    color: #fff;
+    padding: 40px;
+    border-radius: 25px;
+    transition: all 0.3s;
+    box-shadow: 0 0 15px rgba(88,166,255,0.3);
+    text-align: center;
+    flex: 1 1 300px;
+}
+.especialidades .especialidades-box i{
+    font-size: 70px;
+    color: #58a6ff;
+    margin-bottom: 20px;
+}
+.especialidades .especialidades-box h3{
+    font-size: 28px;
+    margin: 15px 0;
+}
+.especialidades .especialidades-box p{
+    font-size: 16px;
+}
+.especialidades .especialidades-box:hover{
+    transform: scale(1.05);
+    box-shadow: 0 0 30px rgba(126,95,255,0.5);
+}
+
+/* ===== SOBRE ===== */
+section.Sobre .flex {
+    flex-direction: row;      /* lado a lado */
+    flex-wrap: nowrap;        /* não permitir quebra automática */
+    align-items: center;
+    gap: 48px;
+    justify-content: center;
+}
+
+/* define tamanhos & comportamento dos filhos */
+section.Sobre .img-sobre {
+    flex: 0 0 360px;          /* largura fixa da coluna da imagem */
+    display: flex;
+    justify-content: center;
+    align-items: center;
+}
+
+section.Sobre .img-sobre img {
+    width: 100%;
+    max-width: 360px;
+    height: auto;
+    border-radius: 25px;
+    object-fit: cover;
+    box-shadow: 0 0 30px rgba(88,166,255,0.5);
+}
+
+section.Sobre .txt-sobre {
+    flex: 1 1 auto;           /* texto ocupa o resto do espaço */
+    min-width: 280px;
+}
+
+
+/* ===== PORTFÓLIO ===== */
+section.portfolio{
+    padding: 80px 4%;
+    margin-bottom: 60px;
+}
+section.portfolio .flex{
+    gap: 40px;
+    flex-wrap: wrap;
+    justify-content: space-around;
+}
+.img-port{
+    width: 360px;
+    height: 460px;
+    background-size: cover;
+    background-position: center;
+    border-radius: 40px;
+    cursor: pointer;
+    position: relative;
+    transition: all 0.7s;
+}
+.img-port:hover{
+    transform: scale(1.05);
+    box-shadow: 0 0 30px rgba(88,166,255,0.5);
+}
+.overlay{
+    position: absolute;
+    top: 0;
+    left: 0;
+    width: 100%;
+    height: 100%;
+    background-color: rgba(0,0,0,0.6);
+    border-radius: 40px;
+
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    text-align: center;
+
+    color: #fff;
+    opacity: 0;
+    transition: .5s;
+    padding: 20px;
+}
+.overlay-content{
+    display: flex;
+    flex-direction: column;
+    gap: 10px;
+}
+
+.overlay-content h3{
+    font-size: 24px;
+    font-weight: 700;
+}
+
+.overlay-content p{
+    font-size: 14px;
+    line-height: 1.4;
+    opacity: 0.9;
+}
+.img-port:hover .overlay{
+    opacity: 1;
+}
+
+/* ===== FORMULÁRIO ===== */
+section.formulario{
+    padding: 80px 4%;
+    margin-bottom: 60px;
+}
+form{
+    max-width: 500px;
+    margin: 0 auto;
+    display: flex;
+    flex-direction: column;
+    gap: 15px;
+}
+form input, form textarea{
+    width: 100%;
+    background-color: #1f1f2a;
+    border: none;
+    outline: none;
+    padding: 20px 15px;
+    border-radius: 10px;
+    color: #fff;
+    font-size: 16px;
+    
+}
+form textarea{
+    resize: none;
+    max-height: 200px;
+}
+form button{
+    width: 100%;
+}
+
+/* ===== ANIMAÇÃO ===== */
+@keyframes flutuar{
+    0%{ transform: translateY(0px);}
+    50%{ transform: translateY(20px);}
+    100%{ transform: translateY(0px);}
+}
+
+/* ===== RESPONSIVO ===== */
+@media (max-width: 900px){
+    .flex{
+        flex-direction: column;
+        text-align: center;
+        align-items: center;
+    }
+    .imgTopoSite img, .img-sobre img{
+        width: 250px;
+    }
+    .txtTopoSite h1{
+        font-size: 36px;
+    }
+    main {
+        padding-top: 140px;     
+    }
+    section.Sobre .flex {
+        flex-direction: column;   /* imagem em cima, texto embaixo */
+        text-align: center;
+        gap: 20px;
+    }
+
+    section.Sobre .img-sobre {
+        flex: 0 0 auto;
+        order: 0;
+    }
+
+    section.Sobre .txt-sobre {
+        order: 1;
+        width: 100%;
+    }
+
+    section.Sobre .img-sobre img {
+        max-width: 250px;
+        margin: 0 auto;
+    }
+
+}
+main {
+    padding-top: 120px; 
+}
+.animate {
+    opacity: 0;
+    transform: translateY(50px);
+    transition: all 0.8s ease-out;
+}
+.animate.show {
+    opacity: 1;
+    transform: translateY(0);
+}
