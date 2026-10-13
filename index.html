@@ -1,189 +1,442 @@
 <!DOCTYPE html>
-<html lang="pt-br">
+<html lang="pt-BR">
 
 <head>
     <meta charset="UTF-8">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
-    <link rel="stylesheet" href="style.css">
+    <title>Nicolas Pascoal — Desenvolvedor C#/.NET</title>
+    <meta name="description" content="Nicolas Pascoal, desenvolvedor C#/.NET em Santos/SP. APIs, banco de dados e sistemas em produção — incluindo o Gabaro, SaaS para construtoras com cliente real.">
+    <meta name="theme-color" content="#0E0C14">
+    <meta property="og:title" content="Nicolas Pascoal — Desenvolvedor C#/.NET">
+    <meta property="og:description" content="Construo o que o usuário não vê, mas sente. APIs, banco de dados e sistemas em produção.">
+    <meta property="og:type" content="website">
+    <meta property="og:locale" content="pt_BR">
+    <link rel="icon" href="data:image/svg+xml,%3Csvg xmlns='http://www.w3.org/2000/svg' viewBox='0 0 64 64'%3E%3Crect width='64' height='64' rx='14' fill='%230E0C14'/%3E%3Ccircle cx='38' cy='28' r='14' fill='none' stroke='%239D86FF' stroke-width='5'/%3E%3Cpath d='M18 50V22' stroke='%23EEEAF6' stroke-width='6' stroke-linecap='round'/%3E%3C/svg%3E">
+
     <link rel="preconnect" href="https://fonts.googleapis.com">
     <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
-    <link
-        href="https://fonts.googleapis.com/css2?family=Poppins:ital,wght@0,100;0,200;0,300;0,400;0,500;0,600;0,700;0,800;0,900;1,100;1,200;1,300;1,400;1,500;1,600;1,700;1,800;1,900&display=swap"
-        rel="stylesheet">
-    <link rel="stylesheet" href="https://cdn.jsdelivr.net/npm/bootstrap-icons@1.11.3/font/bootstrap-icons.min.css">
-    <!-- EmailJS SDK (client-side). Replace 'YOUR_EMAILJS_USER_ID' with your user ID from EmailJS dashboard -->
-    <script src="https://cdn.jsdelivr.net/npm/emailjs-com@3/dist/email.min.js"></script>
-    <script>
-        // If you want to initialize here, replace the placeholder with your EmailJS user id.
-        // emailjs.init('YOUR_EMAILJS_USER_ID');
-    </script>
+    <link href="https://fonts.googleapis.com/css2?family=Bricolage+Grotesque:opsz,wght@12..96,300..800&family=JetBrains+Mono:wght@400;600&display=swap" rel="stylesheet">
+    <link rel="stylesheet" href="style.css">
     <script src="script.js" defer></script>
-    <title>Nicolas Dev</title>
 </head>
 
 <body>
-    <header>
-        <div class="interface">
-            <div class="logo">
-                <a href="#">
-                    <img src="img/Logo NicolasDev.png" alt="Nicolas Dev">
-                </a>
+    <a class="skip" href="#conteudo">Pular para o conteúdo</a>
 
-            </div><!--logo-->
-            <nav class="menu-desktop">
-                <ul>
-                    <li><a href="#">Inicio</a></li>
-                    <li><a href="#especialidades">Especialidades</a></li>
-                    <li><a href="#sobre">Sobre</a></li>
-                    <li><a href="#projetos">Projetos</a></li>
-                </ul>
+    <header class="topbar">
+        <div class="wrap topbar-inner">
+            <a class="mark" href="#topo" aria-label="Nicolas Pascoal, voltar ao início">
+                <span class="mark-glyph" aria-hidden="true"></span>
+                Nicolas Pascoal
+            </a>
+            <nav class="nav" aria-label="Seções">
+                <a href="#projetos">Projetos</a>
+                <a href="#trajetoria">Trajetória</a>
+                <a href="#sobre">Sobre</a>
+                <a href="#contato">Contato</a>
             </nav>
-            <div class="btn-contato">
-                <a href="#contato">
-                    <button>Contato</button>
-                </a>
-            </div>
-        </div> <!-- interface -->
+            <a class="btn btn-solid btn-sm" href="assets/CV_Nicolas_Pascoal_Dev_NET.pdf" download>Baixar currículo</a>
+        </div>
     </header>
 
-    <main>
-        <section class="topoDoSite">
-            <div class="interface">
-                <div class="flex">
-                    <div class="imgTopoSite animate">
-                        <img src="img/imgMain-removebg-preview.png" alt="">
-                    </div>
-                    <div class="txtTopoSite animate">
-                        <h1>CONSTRUINDO O QUE O USUÁRIO NÃO VÊ, MAS SENTE</h1>
-                        <p>A tecnologia que funciona bem nem sempre é vista — mas é sentida. Com atenção à lógica,
-                            performance e segurança, desenvolvo soluções back-end que sustentam produtos reais e
-                            confiáveis.</p>
+    <main id="conteudo">
 
-                        <div class="btn-contato">
-                            <a href="#">
-                                <button>Entre em Contato</button>
-                            </a>
+        <!-- HERO -->
+        <section class="hero" id="topo">
+            <div class="wrap hero-grid">
+                <div class="hero-copy">
+                    <h1 class="hero-title">Construo o que o usuário não vê, mas sente.</h1>
+                    <p class="hero-sub">
+                        Sou Nicolas Pascoal, desenvolvedor C#/.NET na Vértice, onde evoluo e sustento o
+                        <strong>OneClick</strong>. Fora do expediente, mantenho o <strong>Gabaro</strong>: um SaaS
+                        para construtoras que está em produção com cliente real.
+                    </p>
+
+                    <div class="hero-actions">
+                        <div class="cta-block">
+                            <a class="btn btn-solid" href="assets/CV_Nicolas_Pascoal_Dev_NET.pdf" download>Baixar currículo</a>
+                            <span class="cta-trigger">PDF, 1 página, atualizado em outubro de 2026</span>
                         </div>
+                        <a class="btn btn-ghost" href="#projetos">Ver projetos</a>
                     </div>
 
+                    <ul class="proof" aria-label="Destaques">
+                        <li><span class="live-dot" aria-hidden="true"></span>Gabaro em produção, com cliente real</li>
+                        <li>50 testes automatizados e CI/CD com GitHub Actions</li>
+                        <li>2 anos de estágio full stack na PRODESAN</li>
+                    </ul>
                 </div>
-            </div>
-        </section>
-        <section class="especialidades" id="especialidades">
-            <div class="interface animate">
-                <h2 class="titulo">MINHAS <span>ESPECIALIDADES</span></h2>
-                <div class="flex">
-                    <div class="especialidades-box">
-                        <i class="bi bi-bug"></i>
-                        <h3>APIs e Integrações</h3>
-                        <p>Criação e manutenção de APIs RESTful e integração com serviços externos.</p>
+
+                <figure class="hero-figure">
+                    <div class="stage" id="stage" data-lens>
+                        <!-- Cada região mostra a tela; o .xray dentro dela é o código que a sustenta -->
+                        <div class="layer" aria-hidden="true">
+                            <div class="region ui-bar">
+                                <span class="ui-logo"><span class="ui-diamond"></span>gabaro</span>
+                                <span class="ui-crumb">Residencial Itanhaém</span>
+                                <span class="ui-user">MS</span>
+<div class="xray"><pre><span class="k">GET</span> /api/orcamentos  empresa_id<span class="o">=</span><span class="n">7</span></pre></div>
+                            </div>
+
+                            <div class="region ui-budget">
+                                <p class="ui-h">Orçamento por categoria</p>
+                                <ul class="ui-bars">
+                                    <li class="is-over"><span>Estrutura</span><b>112%</b><i style="--p:100%"></i></li>
+                                    <li><span>Alvenaria</span><b>81%</b><i style="--p:81%"></i></li>
+                                    <li><span>Elétrica</span><b>64%</b><i style="--p:64%"></i></li>
+                                    <li><span>Hidráulica</span><b>47%</b><i style="--p:47%"></i></li>
+                                    <li><span>Acabamento</span><b>22%</b><i style="--p:22%"></i></li>
+                                </ul>
+<div class="xray"><pre><span class="k">SELECT</span> categoria,
+  orcado, <span class="f">SUM</span>(valor)
+<span class="k">FROM</span> orcamentos o
+<span class="k">JOIN</span> projetos p
+  <span class="k">ON</span> p.id <span class="o">=</span> o.projeto_id
+<span class="k">WHERE</span> p.empresa_id <span class="o">=</span> ?
+<span class="k">GROUP BY</span> categoria
+<span class="c">-- cada empresa vê</span>
+<span class="c">-- só a própria obra</span></pre></div>
+                            </div>
+
+                            <div class="ui-side">
+                                <div class="region ui-cash">
+                                    <p class="ui-h">Saldo em caixa</p>
+                                    <p class="ui-big">R$ 184.320</p>
+                                    <p class="ui-note">R$ 32.400 entraram hoje</p>
+<div class="xray"><pre>entradas <span class="o">-</span> saidas
+<span class="ok">200 OK</span>  <span class="n">38</span>ms</pre></div>
+                                </div>
+                                <div class="region ui-alert" id="lens-rest">
+                                    <p class="ui-alert-title">Estrutura passou 12% do orçado</p>
+                                    <p class="ui-note">Aviso enviado às 09:14</p>
+<div class="xray"><pre><span class="k">if</span> gasto <span class="o">&gt;</span> orcado:
+  <span class="f">alertar</span>(categoria)</pre></div>
+                                </div>
+                            </div>
+
+                            <div class="region ui-audit">
+                                <span class="ui-avatar">MA</span>
+                                <p>Requisição 318, 40 sacos de cimento, aprovada por Marina às 14:02</p>
+<div class="xray"><pre><span class="k">INSERT INTO</span> auditoria (acao, empresa_id)
+<span class="k">VALUES</span> (<span class="s">'requisicao.aprovada'</span>, <span class="n">7</span>)</pre></div>
+                            </div>
+                        </div>
+
+                        <div class="xray-ground" aria-hidden="true"></div>
+
+                        <span class="lens-ring" aria-hidden="true"></span>
                     </div>
 
-                    <div class="especialidades-box">
-                        <i class="bi bi-database"></i>
-                        <h3>Banco de Dados</h3>
-                        <p>Modelagem, otimização e gerenciamento de bancos relacionais e não-relacionais.</p>
-                    </div>
-
-                    <div class="especialidades-box">
-                        <i class="bi bi-code-slash"></i>
-                        <h3>WebSites</h3>
-                        <p>Sites rápidos, modernos e responsivos, focados em performance e experiência do usuário.</p>
-                    </div>
-
-                </div>
-            </div>
-
-
-
-
-        </section>
-        <section class="Sobre" id="sobre">
-            <div class="interface">
-                <div class="flex animate">
-                    <div class="img-sobre">
-                        <img src="img/WhatsApp Image 2025-04-08 at 19.55.09.jpeg" alt="Nicoals Gomes Pascoal">
-                    </div>
-                    <div class="txt-sobre">
-                        <h2>MUITO PRAZER, ME CHAMO <span>NICOLAS PASCOAL.</span></h2>
-                        <p>Desenvolvedor Full Stack com experiência profissional no desenvolvimento e manutenção de
-                            sistemas web, atuando na criação de APIs RESTful com Python (Flask, SQLAlchemy) e na
-                            construção de interfaces responsivas com React e TypeScript. Também possuo experiência
-                            modelagem de bancos de dados MySQL, trabalhando com integração entre sistemas e evolução de
-                            aplicações reais.
+                    <figcaption class="stage-caption">
                         <p>
-                            <br>
-                        <p>Além da experiência profissional, desenvolvo projetos acadêmicos e pessoais utilizando outras
-                            tecnologias e arquiteturas, ampliando continuamente minha base técnica em desenvolvimento
-                            back-end e front-end. Atualmente curso Sistemas de Informação e busco evoluir na construção
-                            de soluções web modernas, escaláveis e bem estruturadas.</p>
-                        <div class="btn-social">
-                            <a href="https://www.linkedin.com/in/nicolasgomespascoal" target="_blank"><button><i
-                                        class="bi bi-linkedin"></i></button></a>
-                            <a href="https://www.instagram.com/ncolasgomes?igsh=MTR3eTA1NnQ5MDh5NA=="
-                                target="_blank"><button><i class="bi bi-instagram"></i></button></a>
-                            <a href="https://github.com/NicolasPascoal"><button><i
-                                        class="bi bi-github"></i></button></a>
+                            Tela de orçamento do Gabaro, com código simplificado.
+                            <span class="hint-pointer">Passe o cursor para ver o código que sustenta cada parte.</span>
+                            <span class="hint-touch">Toque em qualquer parte para ver o código que a sustenta.</span>
+                        </p>
+                        <button class="toggle" type="button" id="reveal-all" aria-pressed="false" aria-controls="stage">
+                            <span class="toggle-off">Mostrar todo o código</span>
+                            <span class="toggle-on">Voltar para a tela</span>
+                        </button>
+                    </figcaption>
+                </figure>
+            </div>
+        </section>
 
+        <!-- PROJETOS -->
+        <section class="section" id="projetos" aria-labelledby="projetos-title">
+            <div class="wrap">
+                <header class="section-head">
+                    <h2 id="projetos-title">Projetos</h2>
+                    <p>Cada projeto tem duas camadas: o que ele resolve para quem usa e, logo abaixo, como funciona por dentro.</p>
+                </header>
+
+                <!-- Destaque: Gabaro -->
+                <article class="feature">
+                    <div class="feature-main">
+                        <p class="status"><span class="live-dot" aria-hidden="true"></span>Em produção com cliente real</p>
+                        <h3 class="feature-title">Gabaro</h3>
+                        <p class="feature-lede">
+                            Controle financeiro de obra sem planilha. A construtora acompanha orçamento, caixa,
+                            requisições de material e tarefas em um só lugar, e recebe um aviso quando uma
+                            categoria passa do previsto, antes que o dinheiro acabe.
+                        </p>
+                        <ul class="feature-list">
+                            <li>Controle orçamentário com alertas por categoria</li>
+                            <li>Fluxo de caixa, requisições de materiais e gestão de tarefas</li>
+                            <li>Importação de planilhas CSV e XLSX</li>
+                            <li>Linha do tempo de auditoria: quem fez o quê, e quando</li>
+                            <li>Autocadastro público para novas empresas</li>
+                        </ul>
+                        <div class="links">
+                            <a class="btn btn-solid" href="https://prumoprime.vercel.app" target="_blank" rel="noopener">Conhecer o Gabaro</a>
+                            <a class="btn btn-ghost" href="https://github.com/NicolasPascoal/Expense-Management-Project" target="_blank" rel="noopener">Ver código no GitHub</a>
+                        </div>
+                    </div>
+
+                    <div class="feature-under">
+                        <p class="under-label">Por baixo</p>
+                        <dl class="facts">
+                            <div><dt>50</dt><dd>testes automatizados com pytest, rodando contra um banco de teste dedicado</dd></div>
+                            <div><dt>Multi-tenant</dt><dd>dados isolados por empresa em todas as listagens, leituras e escritas</dd></div>
+                            <div><dt>CI/CD</dt><dd>GitHub Actions e deploy em staging via Portainer</dd></div>
+                            <div><dt>Migrações</dt><dd>SQLAlchemy e Alembic sobre PostgreSQL</dd></div>
+                        </dl>
+                        <blockquote class="decision">
+                            <p>
+                                Cada tabela chega na empresa por um caminho diferente: algumas direto, outras pelo
+                                projeto ou pelo usuário. Por isso troquei um decorator genérico por validação de posse
+                                em cada rota. Um recurso de outra empresa responde <code>404</code>, nunca revela que existe.
+                            </p>
+                            <footer>Decisão registrada na migração para multi-tenant</footer>
+                        </blockquote>
+                        <p class="stack">Python, Flask, React, TypeScript, PostgreSQL, Docker</p>
+                    </div>
+                </article>
+
+                <!-- Demais projetos -->
+                <ol class="work" aria-label="Outros projetos">
+                    <li class="work-item">
+                        <div class="work-head">
+                            <h3>FTV Gonzaga</h3>
+                            <p class="work-what">Gestão de alunos e mensalidades de uma escola de futevôlei. Quando a mensalidade vence, o aluno recebe a cobrança no WhatsApp, sem ninguém precisar lembrar.</p>
+                            <p class="stack">Python, Flask, SQLAlchemy, React, TypeScript, MySQL, Node, Docker Compose</p>
+                        </div>
+                        <div class="work-under">
+                            <p class="flow"><span>React no Nginx</span><span>API Flask com JWT</span><span>MySQL</span></p>
+                            <p class="flow"><span>Agendador na API</span><span>Bot de WhatsApp</span><span>Aluno</span></p>
+                            <details class="under">
+                                <summary><span class="s-closed">Ver decisões técnicas</span><span class="s-open">Fechar</span></summary>
+                                <div class="under-body">
+                                    <ul>
+                                        <li>O bot de WhatsApp roda em um container próprio, com a sessão salva em volume. A API só faz uma chamada interna, então reiniciar a API não derruba a conexão com o WhatsApp.</li>
+                                        <li>O banco sobe com healthcheck e a API só inicia depois que o MySQL responde.</li>
+                                        <li>Quatro serviços orquestrados por um único <code>docker compose up</code>.</li>
+                                    </ul>
+                                    <a class="text-link" href="https://github.com/NicolasPascoal/ftv-project" target="_blank" rel="noopener">Código no GitHub</a>
+                                </div>
+                            </details>
+                        </div>
+                    </li>
+
+                    <li class="work-item">
+                        <div class="work-head">
+                            <h3>Cofre</h3>
+                            <p class="work-what">Gerenciador de senhas local. Tudo fica criptografado em disco e só abre com a senha mestra; se alguém copiar o arquivo, não consegue ler nem alterar.</p>
+                            <p class="stack">TypeScript, Bun, ElysiaJS</p>
+                        </div>
+                        <div class="work-under">
+                            <p class="flow"><span>Senha mestra</span><span>scrypt</span><span>AES-256-GCM</span><span>vault.json</span></p>
+                            <details class="under">
+                                <summary><span class="s-closed">Ver decisões técnicas</span><span class="s-open">Fechar</span></summary>
+                                <div class="under-body">
+                                    <ul>
+                                        <li>Chave derivada com scrypt e IV novo a cada gravação; o authTag do GCM detecta qualquer adulteração do arquivo.</li>
+                                        <li>A chave só existe na memória do processo. Reiniciou o servidor, o cofre volta trancado.</li>
+                                        <li>Sessão em cookie httpOnly, auto-lock por inatividade e backoff exponencial contra força bruta no desbloqueio.</li>
+                                        <li>Senha errada e arquivo corrompido devolvem a mesma mensagem, sem pista para quem ataca.</li>
+                                        <li>Modelo de ameaça documentado: o que o projeto protege e o que, honestamente, não protege.</li>
+                                    </ul>
+                                    <a class="text-link" href="https://github.com/NicolasPascoal/cofre" target="_blank" rel="noopener">Código no GitHub</a>
+                                </div>
+                            </details>
+                        </div>
+                    </li>
+
+                    <li class="work-item">
+                        <div class="work-head">
+                            <h3>IP Who Is</h3>
+                            <p class="work-what">API que devolve a localização e a conexão de um endereço IP. Consultas repetidas respondem na hora, sem depender da API externa.</p>
+                            <p class="stack">Python, Flask, MongoDB Atlas, Celery, Redis</p>
+                        </div>
+                        <div class="work-under">
+                            <p class="flow"><span>POST com o IP</span><span>Cache no MongoDB</span><span>ipwho.is, só se faltar</span></p>
+                            <p class="flow"><span>Celery Beat a cada 12h</span><span>Worker</span><span>Atualiza todos os IPs</span></p>
+                            <details class="under">
+                                <summary><span class="s-closed">Ver decisões técnicas</span><span class="s-open">Fechar</span></summary>
+                                <div class="under-body">
+                                    <ul>
+                                        <li>Rotas, regra de negócio e persistência em camadas separadas, para testar e manter cada parte sozinha.</li>
+                                        <li>A atualização periódica roda fora do ciclo de vida da API e espaça as chamadas para respeitar o limite da API pública.</li>
+                                    </ul>
+                                    <div class="text-links">
+                                        <a class="text-link" href="https://github.com/NicolasPascoal/Dimensa-API" target="_blank" rel="noopener">Código no GitHub</a>
+                                        <a class="text-link" href="https://www.youtube.com/watch?v=RvC9sp8ydFE" target="_blank" rel="noopener">Vídeo da arquitetura</a>
+                                    </div>
+                                </div>
+                            </details>
+                        </div>
+                    </li>
+
+                    <li class="work-item">
+                        <div class="work-head">
+                            <h3>Product Inventory</h3>
+                            <p class="work-what">Controle de produção e estoque. A partir da receita de cada produto e do estoque de matérias-primas, o sistema calcula quanto dá para fabricar e sugere o que produzir.</p>
+                            <p class="stack">Java, Quarkus, React, TypeScript, MySQL</p>
+                        </div>
+                        <div class="work-under">
+                            <p class="flow"><span>React + Vite</span><span>API REST em Quarkus</span><span>MySQL</span></p>
+                            <details class="under">
+                                <summary><span class="s-closed">Ver decisões técnicas</span><span class="s-open">Fechar</span></summary>
+                                <div class="under-body">
+                                    <ul>
+                                        <li>Relação muitos-para-muitos entre produto e matéria-prima, com a quantidade exigida de cada uma.</li>
+                                        <li>Métricas de dashboard e cálculo de produtos fabricáveis no back-end, não na tela.</li>
+                                    </ul>
+                                    <div class="text-links">
+                                        <a class="text-link" href="https://github.com/NicolasPascoal/product-inventory-Project" target="_blank" rel="noopener">Código no GitHub</a>
+                                        <a class="text-link" href="https://youtu.be/k9xLXdRabyA" target="_blank" rel="noopener">Vídeo de demonstração</a>
+                                    </div>
+                                </div>
+                            </details>
+                        </div>
+                    </li>
+
+                    <li class="work-item">
+                        <div class="work-head">
+                            <h3>Fila de Produção</h3>
+                            <p class="work-what">Um dos serviços de uma pizzaria simulada em microsserviços, feita pela turma da faculdade. Recebe os pedidos aprovados, controla a fila do forno e avisa quando a pizza fica pronta.</p>
+                            <p class="stack">n8n, webhooks REST, Postman</p>
+                        </div>
+                        <div class="work-under">
+                            <p class="flow"><span>Orquestrador</span><span>Fila de Produção</span><span>Forno</span><span>Orquestrador</span></p>
+                            <details class="under">
+                                <summary><span class="s-closed">Ver decisões técnicas</span><span class="s-open">Fechar</span></summary>
+                                <div class="under-body">
+                                    <ul>
+                                        <li>Respeita a capacidade do forno: no máximo duas pizzas ao mesmo tempo.</li>
+                                        <li>Pedido repetido devolve <code>409</code> em vez de entrar duas vezes na fila.</li>
+                                        <li>Autenticação por chave de API e healthcheck público, com contrato documentado.</li>
+                                        <li>Testado contra o Forno e o Orquestrador reais de outras duplas.</li>
+                                    </ul>
+                                    <a class="text-link" href="https://github.com/NicolasPascoal/Fila_de_Producao-242357-242740" target="_blank" rel="noopener">Documentação no GitHub</a>
+                                </div>
+                            </details>
+                        </div>
+                    </li>
+                </ol>
+
+                <div class="also">
+                    <h3>Também construí</h3>
+                    <ul>
+                        <li><a href="https://github.com/NicolasPascoal/CastImoveis" target="_blank" rel="noopener">Castilho Imóveis</a><span>site de imobiliária com catálogo de compra e aluguel</span></li>
+                        <li><a href="https://github.com/NicolasPascoal/ImperaPag" target="_blank" rel="noopener">Pousada Impera</a><span>site de pousada com quartos e galeria</span></li>
+                        <li><a href="https://github.com/NicolasPascoal/ProjectChatBot" target="_blank" rel="noopener">FURIA FanBot</a><span>bot de Telegram em Python, feito para um desafio técnico</span></li>
+                        <li><a href="https://github.com/NicolasPascoal/ProjetoAppMobile" target="_blank" rel="noopener">Apps Android</a><span>aplicativos em Kotlin da faculdade</span></li>
+                    </ul>
+                </div>
+            </div>
+        </section>
+
+        <!-- TRAJETÓRIA -->
+        <section class="section" id="trajetoria" aria-labelledby="trajetoria-title">
+            <div class="wrap">
+                <header class="section-head">
+                    <h2 id="trajetoria-title">Trajetória</h2>
+                </header>
+
+                <ol class="timeline">
+                    <li class="is-now">
+                        <p class="when">Set/2026 até hoje</p>
+                        <div>
+                            <h3>Analista Júnior de Desenvolvimento <span>Vértice, produto OneClick</span></h3>
+                            <p>Funcionalidades novas, correção de bugs, APIs, consultas e alterações em banco, relatórios, telas e exportações. Testes, homologação, releases e code review no dia a dia.</p>
+                            <p class="stack">C#, .NET Framework 4.8, ASP.NET MVC e Web API, NHibernate, Oracle, jQuery, Kendo UI</p>
+                        </div>
+                    </li>
+                    <li>
+                        <p class="when">Jul a Set/2026</p>
+                        <div>
+                            <h3>Analista de Suporte Jr <span>ARIKI</span></h3>
+                            <p>Chamados de Service Desk dentro do SLA, usuários no Active Directory e monitoramento com Zabbix e Grafana.</p>
+                        </div>
+                    </li>
+                    <li>
+                        <p class="when">Jul/2024 a Jul/2026</p>
+                        <div>
+                            <h3>Estagiário de Desenvolvimento Full Stack <span>PRODESAN S/A</span></h3>
+                            <p>APIs REST em Flask e SQLAlchemy, telas em React e TypeScript, modelagem e otimização de consultas em MySQL, e correções em sistemas corporativos em produção.</p>
+                            <p class="stack">Python, Flask, SQLAlchemy, React, TypeScript, MySQL</p>
+                        </div>
+                    </li>
+                    <li>
+                        <p class="when">2024 a 2027</p>
+                        <div>
+                            <h3>Sistemas de Informação <span>Universidade Santa Cecília</span></h3>
+                            <p>Graduação em andamento.</p>
+                        </div>
+                    </li>
+                </ol>
+            </div>
+        </section>
+
+        <!-- SOBRE -->
+        <section class="section" id="sobre" aria-labelledby="sobre-title">
+            <div class="wrap about">
+                <div class="about-photo">
+                    <img src="assets/nicolas.jpg" alt="Nicolas Pascoal sorrindo, de óculos e camiseta preta" width="720" height="960" loading="lazy">
+                </div>
+                <div class="about-text">
+                    <h2 id="sobre-title">Sobre mim</h2>
+                    <p>
+                        Comecei perto da infraestrutura, abrindo e fechando chamados e olhando gráficos de
+                        monitoramento. Foi ali que entendi que o melhor sistema é aquele sobre o qual ninguém
+                        precisa abrir chamado.
+                    </p>
+                    <p>
+                        Na PRODESAN passei dois anos construindo APIs e telas para sistemas em produção. Hoje
+                        trabalho com C# e .NET no OneClick, e à noite cuido do Gabaro, que nasceu de uma
+                        planilha de obra e virou um produto com cliente pagando.
+                    </p>
+                    <p>
+                        Gosto de entender a regra de negócio antes de escrever código, de deixar decisões
+                        documentadas e de testes que me deixam mexer sem medo. Moro em Santos, falo inglês
+                        em nível avançado e me formo em Sistemas de Informação em 2027.
+                    </p>
+
+                    <div class="tools">
+                        <div>
+                            <h3>No trabalho hoje</h3>
+                            <p>C#, .NET Framework 4.8, ASP.NET MVC, Web API, NHibernate, Oracle, SQL, jQuery, Kendo UI</p>
+                        </div>
+                        <div>
+                            <h3>Em produção nos meus projetos</h3>
+                            <p>Python, Flask, SQLAlchemy, Alembic, PostgreSQL, MySQL, React, TypeScript, Docker, GitHub Actions</p>
+                        </div>
+                        <div>
+                            <h3>Também já usei</h3>
+                            <p>Java com Quarkus, MongoDB, Celery, Redis, Bun, ElysiaJS, n8n, Kotlin</p>
                         </div>
                     </div>
                 </div>
             </div>
         </section>
-        <section class="portfolio" id="projetos">
-            <div class="interface animate">
-                <h2 class="titulo">MEUS <span>PROJETOS</span></h2>
-                <div class="flex">
-                    <div class="img-port" style="background-image: url(img/projetos/ProjetoInventory.jpg);">
-                        <a href="https://github.com/NicolasPascoal/product-inventory-Project" target="_blank"
-                            class="overlay">
-                            <div class="overlay-content">
-                                <h3>Product Inventory</h3>
-                                <p>
-                                    Sistema full stack para controle de produção e estoque, com CRUD de produtos,
-                                    matérias-primas e cálculo automático da produção máxima.
 
-                                    <br><br><br><br>
-                                    Tecnologias: Java (Quarkus), React + TypeScript e MySQL
-                                </p>
-                            </div>
-                        </a>
-                    </div>
-                    <div class="img-port" style="background-image: url(img/projetos/ipwhoisArq.png);">
-                        <a href="https://github.com/NicolasPascoal/Dimensa-API" target="_blank" class="overlay">
-                            <div class="overlay-content">
-                                <h3>IP Who is</h3>
-                                <p>
-                                    Sistema backend em Python com consulta de geolocalização por IP, utilizando cache
-                                    inteligente com MongoDB para reduzir latência e chamadas externas, além de
-                                    atualização automática dos dados via tarefas assíncronas com Celery e Redis.
-                                    <br><br><br><br>
-                                    Tecnologias: Python (Flask) e MongoDB Atlas
-                                </p>
-                            </div>
-                        </a>
+        <!-- CONTATO -->
+        <section class="contact" id="contato" aria-labelledby="contato-title">
+            <div class="wrap">
+                <h2 id="contato-title">Tem uma vaga ou um projeto em mente? Vamos conversar.</h2>
+                <div class="contact-actions">
+                    <button class="email-copy" type="button" data-email="nicolaspascoaldev@gmail.com">
+                        <span class="email-addr">nicolaspascoaldev@gmail.com</span>
+                        <span class="email-state" aria-live="polite">Copiar e-mail</span>
+                    </button>
+                    <div class="contact-links">
+                        <a class="btn btn-solid" href="mailto:nicolaspascoaldev@gmail.com?subject=Contato%20pelo%20portf%C3%B3lio">Enviar e-mail</a>
+                        <a class="btn btn-ghost" href="https://www.linkedin.com/in/nicolasgomespascoal" target="_blank" rel="noopener">LinkedIn</a>
+                        <a class="btn btn-ghost" href="https://github.com/NicolasPascoal" target="_blank" rel="noopener">GitHub</a>
+                        <a class="btn btn-ghost" href="https://wa.me/5513991489993" target="_blank" rel="noopener">WhatsApp</a>
                     </div>
                 </div>
-
-            </div>
-        </section>
-        <section class="formulario" id="contato">
-            <div class="inferface animate">
-                <h2 class="titulo">ENTRE EM CONTATO.</h2>
-                <form id="form-contato">
-                    <input type="text" name="nome" id="nome" placeholder="Seu nome: " required>
-                    <input type="email" name="email" id="email" placeholder="Seu email: " required>
-                    <input type="text" name="telefone" id="telefone" placeholder="Seu telefone: ">
-                    <textarea name="mensagem" id="mensagem" placeholder="Sua mensagem"></textarea>
-                    <button type="submit">Enviar</button>
-                </form>
-
-                <!-- Feedback simples -->
-                <div id="form-feedback" aria-live="polite" style="margin-top:12px"></div>
-
             </div>
         </section>
     </main>
+
+    <footer class="foot">
+        <div class="wrap foot-inner">
+            <p>Nicolas Gomes Pascoal, Santos/SP, 2026</p>
+            <a class="text-link" href="https://github.com/NicolasPascoal/Portfolio-main" target="_blank" rel="noopener">Código deste site</a>
+        </div>
+    </footer>
 </body>
 
 </html>
