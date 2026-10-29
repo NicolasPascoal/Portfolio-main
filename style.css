@@ -1170,22 +1170,50 @@ code {
    Trajetória
 ------------------------------------------------------------ */
 .timeline {
+    --rail: 224px;
     list-style: none;
     margin: 0;
     padding: 0;
+    position: relative;
 }
 
 .timeline li {
     display: grid;
     grid-template-columns: 200px minmax(0, 1fr);
     gap: 8px 48px;
-    padding: 28px 0;
-    border-top: 1px solid var(--line);
+    padding: 26px 0;
     position: relative;
 }
 
-.timeline li:last-child {
-    border-bottom: 1px solid var(--line);
+.timeline li::before {
+    content: "";
+    position: absolute;
+    left: var(--rail);
+    top: 34px;
+    width: 12px;
+    height: 12px;
+    margin-left: -6px;
+    border-radius: 50%;
+    background: var(--void);
+    border: 2px solid var(--violet);
+}
+
+/* Linha da jornada: liga cada ponto ao próximo */
+.timeline li:not(:last-child)::after {
+    content: "";
+    position: absolute;
+    left: var(--rail);
+    top: 46px;
+    bottom: -34px;
+    width: 2px;
+    margin-left: -1px;
+    background: rgba(157, 134, 255, .35);
+}
+
+.timeline li.is-now::before {
+    background: var(--live);
+    border-color: var(--live);
+    box-shadow: 0 0 0 5px rgba(94, 230, 168, .16);
 }
 
 .when {
@@ -1195,9 +1223,29 @@ code {
     padding-top: 4px;
 }
 
+.when span {
+    display: block;
+    font-size: 13px;
+    font-weight: 500;
+}
+
 .is-now .when {
     color: var(--live);
     font-weight: 600;
+}
+
+.edu {
+    margin-top: 28px;
+    padding-top: 22px;
+    border-top: 1px solid var(--line);
+    color: var(--mute);
+    font-size: 15.5px;
+}
+
+.edu strong {
+    color: var(--text);
+    font-weight: 600;
+    margin-right: 10px;
 }
 
 .timeline h3 {
@@ -1226,8 +1274,32 @@ code {
 }
 
 @media (max-width: 680px) {
+    .timeline {
+        --rail: 6px;
+    }
+
+    .timeline li:not(:last-child)::after {
+        top: 38px;
+        bottom: -26px;
+    }
+
     .timeline li {
         grid-template-columns: 1fr;
+        gap: 4px;
+        padding: 20px 0 20px 32px;
+    }
+
+    .timeline li::before {
+        top: 26px;
+    }
+
+    .when {
+        padding-top: 0;
+    }
+
+    .when span {
+        display: inline;
+        margin-left: 6px;
     }
 }
 
